@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Start Node.js Server
+        run: |
+          cd server
+          node server.js &
+          # Sleep for 10 seconds to allow the server to start
+          sleep 10
+
+      - name: Start React App
+        run: |
+          npm run dev &
+          # Sleep for 10 seconds to allow the app to start
+          sleep 10
+
+      - name: Wait for Server and App
+        run: sleep 10  # Adjust the sleep duration as needed
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
