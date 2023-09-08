@@ -202,6 +202,11 @@ h6 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width: 950px) {
+  .firstthird {
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 1250px) {
   .secondthird {
@@ -223,8 +228,8 @@ h6 {
         width: 100%;
       }
 
-      .projectLinks{
-        .projectLinkIcon{
+      .projectLinks {
+        .projectLinkIcon {
           padding: 1em;
         }
       }
@@ -243,10 +248,9 @@ h6 {
         .projectDescription {
           font-size: x-small;
         }
-       
       }
       .technologiesContainer {
-        h3{
+        h3 {
           font-size: small;
         }
         .tech {
