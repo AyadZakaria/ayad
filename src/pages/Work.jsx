@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Navbar from "../components/Navbar";
 import { projects } from "../../constants";
-import "../assets/scss/pagesStyling/work.scss";
+import "../assets/scss/work.scss";
 import ProjectPopOut from "../utils/ProjectPopOut";
 
 const Work = () => {

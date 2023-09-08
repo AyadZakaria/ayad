@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { MailIcon, PhoneIcon, LocationIcon } from "../assets/imgs/index";
-import "../assets/scss/pagesStyling/contact.scss";
+import "../assets/scss/contact.scss";
 import { useState } from "react";
 import { BallTriangle } from "react-loader-spinner";
 

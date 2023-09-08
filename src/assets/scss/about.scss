@@ -1,4 +1,4 @@
-@import "../_variables";
+@import "./_variables";
 
 .mainAbout {
   display: flex;
@@ -69,67 +69,66 @@
     }
   }
 
-  .experiencesContainer{
+  .experiencesContainer {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: 1em auto;
 
-    .ExperienceCard{
-        padding: .5em;
-        width: 20em;
-        height:auto;
+    .ExperienceCard {
+      padding: 0.5em;
+      width: 20em;
+      height: auto;
+      border: $first-border;
+      border-radius: 1em;
+      span {
+        font-size: 40px;
         border: $first-border;
-        border-radius: 1em;
-        span{
-          font-size: 40px;
-          border: $first-border;
-          margin: .5em;
-          padding: .2em;
-          border-radius: 1.2em;
-          background: $main-color;
-          // opacity: .7;
+        margin: 0.5em;
+        padding: 0.2em;
+        border-radius: 1.2em;
+        background: $main-color;
+        // opacity: .7;
+      }
+      .experienceInfo {
+        h3 {
+          font-size: medium;
+          // color: $main-color;
         }
-        .experienceInfo{
-            h3{
-                font-size: medium;
-                // color: $main-color;
-            }
-            p{
-                opacity: .5;
-                font-size: small;
-                margin-left: 2em;
-            }
-            .cardFooter{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h4{
-                    font-size: small;
-                    opacity: .8;
-                    // color: $main-color;
-                }
-                p{
-                    color: $main-color;
-                    opacity: 1;
-                }
-            }
+        p {
+          opacity: 0.5;
+          font-size: small;
+          margin-left: 2em;
         }
+        .cardFooter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            font-size: small;
+            opacity: 0.8;
+            // color: $main-color;
+          }
+          p {
+            color: $main-color;
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }
 
-
 // RESPONSIVE
 
 @media screen and (max-width: 820px) {
-  .mainAbout{
+  .mainAbout {
     flex-direction: column;
-    .left{
+    .left {
       margin: 0 auto;
       width: 90%;
     }
-    .right{
+    .right {
       margin: 2em auto;
       width: 90%;
     }

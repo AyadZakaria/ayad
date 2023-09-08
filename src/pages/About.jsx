@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { MainPic } from "../assets/imgs";
-import "../assets/scss/pagesStyling/about.scss";
+import "../assets/scss/about.scss";
 import { experiencesList, socials_links } from "../../constants";
 import { Link } from "react-router-dom";
 
