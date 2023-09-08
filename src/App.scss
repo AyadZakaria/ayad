@@ -208,6 +208,12 @@ h6 {
     font-size: x-small;
   }
 }
+@media screen and (max-width: 950px) {
+  .secondthird {
+    margin: 0 auto;
+    font-size: x-small;
+  }
+}
 
 @media screen and (max-width: 1250px) {
   .secondthird {
