@@ -13,7 +13,6 @@ jobs:
         run: |
           npm cache clean --force
         env:
-          GH_PAT: ${{ secrets.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 }}
           CI: true
 
   build-and-deploy:
@@ -46,6 +45,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          deploy_key: ${{secrets.FIRST_DEPLOY_KEY}}
         with:
-          github_token: ${{ env.GH_PAT }}
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./build
