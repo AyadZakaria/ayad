@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../assets/scss/ComponentsStyling/navbar.scss";
+import "../assets/scss/navbar.scss";
 import { navbar_items } from "../../constants";
 import { Link } from "react-router-dom";
 import { useState } from "react";

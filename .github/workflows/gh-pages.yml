@@ -6,9 +6,17 @@ on:
       - main
 
 jobs:
+  clear-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clear GitHub Actions Cache
+        run: |
+          npm cache clean --force
+        env:
+          CI: true
+
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -33,7 +41,7 @@ jobs:
           sleep 10
 
       - name: Wait for Server and App
-        run: sleep 10  # Adjust the sleep duration as needed
+        run: sleep 10 # Adjust the sleep duration as needed
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
