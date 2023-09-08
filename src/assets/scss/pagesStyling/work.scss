@@ -1,0 +1,89 @@
+@import "../_variables";
+
+.mainWorkContainer {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  h1 {
+    margin: 2em;
+  }
+
+  .workContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .workCard {
+      border: $first-border;
+      border-radius: 1em;
+      padding: 1em;
+      cursor: pointer;
+
+      p {
+        opacity: 0.8;
+        font-size: small;
+        margin-top: 0;
+      }
+      h3 {
+        font-size: medium;
+        width: 70%;
+        padding: 0.5em;
+        margin: 0 auto;
+      }
+
+      img {
+        border-radius: 1em;
+        width: auto;
+        height: 12em;
+      }
+      .discoverBtn {
+        width: 70%;
+        border: $first-border;
+        border-radius: 0.5em;
+        background: $main-color;
+        transition: $transition_duration;
+        padding: 0.5em;
+        cursor: pointer;
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+  .mainWorkContainer {
+    margin: 0 auto;
+    .workContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .mainWorkContainer {
+    .workContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainWorkContainer {
+    width: auto;
+    .workContainer {
+      width: auto;
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 1fr);
+
+      .workCard{
+        font-size: small;
+        img{
+          height: 10em;
+        }
+      }
+    }
+  }
+}

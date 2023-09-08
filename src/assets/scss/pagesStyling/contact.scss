@@ -1,0 +1,180 @@
+@import "../_variables";
+.mainContainer {
+  .SentNotify{
+    position: absolute;
+    z-index: 1;
+    border: $first-border;
+    padding: 1em;
+    border-radius: 1.5em;
+    background: $main-color;
+    transition: .4s;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  display: flex;
+  justify-content: space-around;
+
+  .left {
+    // width: 30%;
+    // border: $first-border;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      width: 80%;
+
+    }
+
+    .contactCard {
+      cursor: pointer;
+      border: $first-border;
+      border-radius: 1em;
+      background: $bg-gradient;
+      width: 16em;
+      text-align: center;
+      p {
+        background: transparent;
+        opacity: 0.7;
+        cursor: pointer;
+        margin: 1em auto;
+        box-sizing: border-box;
+        &:hover {
+          color: $main-color;
+        }
+      }
+      h2 {
+        font-size: medium;
+        color: $main-color;
+        background: transparent;
+      }
+      img {
+        background: transparent;
+        display: flex;
+        margin: 1em auto;
+        width: 2.7em;
+      }
+    }
+  }
+
+  .right {
+    border: $first-border;
+    border-radius: 1em;
+    width: 50%;
+    .LoaderLabel {
+      width: 40%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .contactForm {
+      text-align: center;
+      h1 {
+        padding-top: 0.2em;
+      }
+      span {
+        color: $main-color;
+      }
+      .inputLabel {
+        input {
+          border: $first-border;
+          width: 90%;
+          border-radius: 1em;
+          padding: 0.5em;
+          outline: none;
+          height: 2.2em;
+          &::placeholder {
+            color: $main-white;
+            opacity: 0.8;
+            font-size: small;
+          }
+        }
+        textarea {
+          border: $first-border;
+          width: 90%;
+          border-radius: 1em;
+          padding: 0.5em;
+
+          outline: none;
+          height: 12em;
+          margin-bottom: 0;
+          resize: none;
+          margin: 0;
+
+          &::placeholder {
+            color: $main-white;
+            opacity: 0.8;
+            font-size: small;
+          }
+        }
+      }
+      .sendMailBtn {
+        opacity: 0.8;
+        width: 90%;
+        border: $first-border;
+        border-radius: 1em;
+        padding: 1em;
+        background: $main-color;
+        margin-top: 0;
+        cursor: pointer;
+        height: auto;
+        transition: $transition_duration;
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE 
+
+@media screen and (max-width:820px) {
+  .mainContainer{
+    flex-direction: column;
+    // border: 1px solid red;
+    width: 90%;
+    margin: 0 auto;
+
+    .left{
+      font-size: small;
+      flex-direction: row;
+
+      .contactCard{
+        height: 12em;
+        padding: 1em;
+      }
+    }
+
+    .right{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .SentNotify{
+      font-size: small;
+    }
+  }
+}
+
+@media screen and (max-width:690px) {
+  .mainContainer{
+    .left{
+      font-size: small;
+      flex-direction: column;
+
+      .contactCard{
+        height: 12em;
+        padding: 1em;
+      }
+    }
+
+    .right{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

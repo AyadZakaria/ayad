@@ -1,0 +1,261 @@
+@import "./assets/scss/__variables.scss";
+* {
+  font-family: $main-font;
+  background-color: $main-bg;
+  color: $main-white;
+  margin: 0.7em;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  background: transparent;
+}
+.firstthird {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+}
+
+.main_btn {
+  align-items: center;
+  background-color: $main-color;
+  border-radius: 1em;
+  border: none;
+  color: $main-white;
+  cursor: pointer;
+  height: 3em;
+  padding: 2px 34px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  width: auto;
+  transition: $transition_duration;
+  box-shadow: $main-box-shadow;
+  &:hover {
+    background: transparent;
+    box-shadow: $main-box-shadow;
+  }
+}
+.secondthird {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+}
+.HireMeBtn {
+  border: $first-border;
+  width: 50%;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  height: 3em;
+  border-radius: 1em;
+  transition: $transition_duration;
+  a {
+    text-decoration: none;
+    background: transparent;
+  }
+  &:hover {
+    background-color: $main-color;
+  }
+}
+
+.ProjectsPopOut {
+  .closeX {
+    position: absolute;
+    right: 0;
+    opacity: 0.7;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+  position: fixed;
+  z-index: 1;
+  border: $first-border;
+  border-radius: 2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: $main-box-shadow;
+
+  .projectThumbnail {
+    width: 150em;
+    img {
+      width: 90%;
+      border-radius: 1em;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .projectLinks {
+      width: 7em;
+      display: flex;
+      margin: 0;
+      padding-top: 0;
+
+      .projectLinkIcon {
+        width: 30%;
+        padding: 0 0.2em 0 0em;
+        position: relative;
+
+        img {
+          border: $first-border;
+          padding: 0.5em;
+          cursor: pointer;
+          background: transparent;
+        }
+
+        p {
+          position: absolute;
+          font-size: x-small;
+          border: $first-border;
+          width: 300%;
+          margin: 0 auto;
+          top: -15%;
+          left: 130%;
+          z-index: 1;
+          padding: 0.5em;
+          border-radius: 1.5em;
+          text-align: center;
+          background: $main-color;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .right {
+    h4 {
+      color: $main-color;
+    }
+    .descriptionContainer {
+      margin-left: 0;
+
+      .projectDescription {
+        font-size: small;
+        opacity: 0.8;
+        opacity: 0.6;
+      }
+    }
+    h3 {
+      color: $main_color;
+      padding: 1em 0;
+    }
+    h4 {
+      opacity: 0.8;
+      font-size: medium;
+    }
+    .technologiesContainer {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: start;
+      width: 90%;
+
+      .tech {
+        font-size: small;
+        border: $first-border;
+        border-radius: 1em;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: $transition_duration;
+
+        p {
+          margin: 0.2;
+          opacity: 0.7;
+          background: transparent;
+        }
+
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE HOME PAGE
+
+@media screen and (max-width: 1200px) {
+  .firstthird {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .firstthird {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .secondthird {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  .ProjectsPopOut {
+    flex-direction: column-reverse;
+    width: 70%;
+    height: auto;
+    font-size: xx-small;
+
+    .projectThumbnail {
+      width: 70%;
+      // margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+
+      .projectLinks{
+        .projectLinkIcon{
+          padding: 1em;
+        }
+      }
+    }
+
+    .right {
+      margin: 1.2em;
+      width: 90%;
+      h3,
+      h4 {
+        font-size: medium;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+      .descriptionContainer {
+        .projectDescription {
+          font-size: x-small;
+        }
+       
+      }
+      .technologiesContainer {
+        h3{
+          font-size: small;
+        }
+        .tech {
+          font-size: x-small;
+        }
+      }
+    }
+  }
+  .ProjectsPopOut .closeX {
+    top: 1%;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../_variables";
+
+.main_projects_container {
+  border: $first-border;
+  border-radius: 1em;
+  position: relative;
+  background: transparent;
+  text-align: center;
+
+  .project_preview {
+    width: 75%;
+    height: 15em;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+  .project_hover {
+    font-size: xx-small;
+    background: transparent;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    h2 {
+      background: transparent;
+      border-radius: 1em;
+      padding: 0.5em;
+      border-radius: 1em;
+      
+      &:hover {
+        background: #d5d5d5;
+        opacity: .8;
+      }
+    }
+  }
+
+  .project_info {
+    background: transparent;
+    text-align: start;
+
+    p {
+      opacity: 0.7;
+      background: transparent;
+      color: $main-color;
+    }
+    h4 {
+      background: transparent;
+    }
+    .ArrowIcon {
+      position: absolute;
+      background: transparent;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

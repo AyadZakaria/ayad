@@ -1,0 +1,59 @@
+@import "../_variables";
+
+.mainContactContainer {
+  border: $first-border;
+  border-radius: 1em;
+  text-align: center;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .left,
+  .right,
+  img,
+  h3,
+  h1 {
+    background-color: transparent;
+  }
+
+  .left {
+    width: 75%;
+    font-size: large;
+    text-align: start;
+
+    h1 {
+      color: $main-color;
+    }
+
+    .GetInTouchBtn {
+      border: $first-border;
+      width: 90%;
+      height: 4em;
+      border-radius: 2em;
+      background: $main-color;
+      font-weight: bold;
+      cursor: pointer;
+      transition: $transition_duration;
+
+      &:hover {
+        background: transparent;
+        color: $main-color;
+      }
+    }
+  }
+
+  .right {
+    img {
+      width: 80%;
+    }
+  }
+  .ArrowIcon {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    cursor: pointer;
+    width: 1.5em;
+  }
+}

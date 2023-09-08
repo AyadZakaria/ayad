@@ -1,0 +1,137 @@
+@import "../_variables";
+
+.mainAbout {
+  display: flex;
+  justify-content: space-around;
+
+  .left {
+    border: $first-border;
+    border-radius: 1em;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    h1 {
+      font-size: medium;
+    }
+
+    .mainPic {
+      box-sizing: border-box;
+      width: 70%;
+      border: $first-border;
+      border-radius: 2em;
+      background: $bg-gradient;
+      padding: 0;
+    }
+
+    .profiles {
+      max-width: inherit;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1em;
+      width: 80%;
+      margin: 0 auto;
+
+      .profileElem {
+        border-radius: 50%;
+        border: $first-border;
+        cursor: pointer;
+        transition: $transition_duration;
+
+        img {
+          background: transparent;
+        }
+
+        &:hover {
+          background: $main-color;
+        }
+      }
+    }
+  }
+  .right {
+    width: 60%;
+    border: $first-border;
+    border-radius: 1em;
+
+    h1 {
+      margin: 1em;
+      font-size: large;
+      color: $main-color;
+      opacity: 0.8;
+    }
+
+    .aboutMain {
+      font-size: small;
+      width: 85%;
+      line-height: 1.5em;
+      padding: 1em 1.5em;
+      opacity: 0.66;
+    }
+  }
+
+  .experiencesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1em auto;
+
+    .ExperienceCard{
+        padding: .5em;
+        width: 20em;
+        height:auto;
+        border: $first-border;
+        border-radius: 1em;
+        span{
+          font-size: 40px;
+          border: $first-border;
+          margin: .5em;
+          padding: .2em;
+          border-radius: 1.2em;
+          background: $main-color;
+          // opacity: .7;
+        }
+        .experienceInfo{
+            h3{
+                font-size: medium;
+                // color: $main-color;
+            }
+            p{
+                opacity: .5;
+                font-size: small;
+                margin-left: 2em;
+            }
+            .cardFooter{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h4{
+                    font-size: small;
+                    opacity: .8;
+                    // color: $main-color;
+                }
+                p{
+                    color: $main-color;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+  }
+}
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 820px) {
+  .mainAbout{
+    flex-direction: column;
+    .left{
+      margin: 0 auto;
+      width: 90%;
+    }
+    .right{
+      margin: 2em auto;
+      width: 90%;
+    }
+  }
+}
