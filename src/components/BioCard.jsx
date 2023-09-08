@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/ComponentsStyling/biocard.scss";
+import "../assets/scss/biocard.scss";
 import { MainPic } from "../assets/imgs";
 import { useNavigate } from "react-router-dom";
 import { Cv } from "../assets/docs/index";
@@ -17,7 +17,7 @@ const BioCard = () => {
         }}
       />
       <div className="info">
-        <h4>Hi There ,</h4>
+        <h4>Hi There,</h4>
         <h4>I'm Ayad Zakaria</h4>
         <h1
           onClick={() => {

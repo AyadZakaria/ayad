@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/ComponentsStyling/contact.scss";
+import "../assets/scss/contact.scss";
 import { Circle } from "../assets/svg";
 import { useNavigate } from "react-router-dom";
 

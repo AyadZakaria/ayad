@@ -1,6 +1,6 @@
 import React from "react";
 import { projects } from "../../constants";
-import "../assets/scss/ComponentsStyling/projects.scss";
+import "../assets/scss/projects.scss";
 import { Circle } from "../assets/svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";

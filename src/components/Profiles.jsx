@@ -1,6 +1,6 @@
 import React from "react";
 import { Circle } from "../assets/svg/index";
-import "../assets/scss/ComponentsStyling/profiles.scss";
+import "../assets/scss/profiles.scss";
 import { socials_links } from "../../constants";
 import { useState } from "react";
 import { socialsIcon } from "../assets/imgs";

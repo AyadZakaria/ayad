@@ -1,4 +1,4 @@
-@import "../_variables";
+@import "./_variables";
 
 .main_skills_contaicer {
   border: $first-border;
@@ -95,7 +95,7 @@
     .skills_cards {
       grid-template-columns: repeat(1, 1fr);
       margin: 0 auto;
-      .skill_card{
+      .skill_card {
         width: 80%;
       }
     }
