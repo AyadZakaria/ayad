@@ -31,28 +31,14 @@ jobs:
           cd client
           npm run build
 
-      - name: Start Node.js Server
+      - name: Move files to 'docs' directory
         run: |
-          cd server
-          node server.js &
-          # Sleep for 10 seconds to allow the server to start
-          sleep 10
-
-      - name: Start React App
-        run: |
-          cd client 
-          npm run dev &
-          # Sleep for 10 seconds to allow the app to start
-          sleep 10
-
-      - name: Wait for Server and App
-        run: sleep 10 # Adjust the sleep duration as needed
+          mv client/build/* docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         env:
           deploy_key: ${{secrets.FIRST_DEPLOY_KEY}}
         with:
-          path: './dist'
           github_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./build
+          publish_dir: ./docs
