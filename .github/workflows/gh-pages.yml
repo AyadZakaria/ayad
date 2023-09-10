@@ -33,7 +33,7 @@ jobs:
 
       - name: Move files to 'docs' directory
         run: |
-          mv client/build/* docs/
+          mv client/dist/* docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
