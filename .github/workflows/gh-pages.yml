@@ -53,5 +53,6 @@ jobs:
         env:
           deploy_key: ${{secrets.FIRST_DEPLOY_KEY}}
         with:
+          path: './dist'
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./build
