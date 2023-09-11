@@ -9,7 +9,12 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+app.use(cors(
+  {
+    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'],
+    origin: ['*']
+  }
+));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
