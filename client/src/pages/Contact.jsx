@@ -25,7 +25,7 @@ const Contact = () => {
     setIsSubmiting(true);
     e.preventDefault();
     try {
-      const response = await fetch("https://ayad-api.vercel.app/sendEmail", {
+      const response = await fetch("https://ayad-8dd19p4z1-ayadzakaria.vercel.app/sendEmail", {
         method: "POST",
         headers: {
           "Access-Control-Allow-Origin":"*",
