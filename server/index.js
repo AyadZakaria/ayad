@@ -1,6 +1,7 @@
 // server.js
 
 const express = require("express");
+const corsconfig = require("./cors.js");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
@@ -9,13 +10,13 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors(
-  {
+app.use(
+  cors({
     origin: ["*"],
-    methods: ['GET','POST','PUT'],
-    credentials: true
-  }
-));
+    methods: ["GET", "POST", "PUT"],
+    credentials: true,
+  })
+);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -57,3 +58,5 @@ app.post("/sendEmail", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+module.exports = cors(handler); 

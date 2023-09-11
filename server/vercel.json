@@ -3,8 +3,8 @@
   "builds": [{ "src": "*.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/sendEmail",
-      "dest": "server/index.js"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ],
   "headers": [
