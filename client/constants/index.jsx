@@ -13,6 +13,7 @@ import {
   Igs,
   JsIcon,
   Laravelcon,
+  Mtripi,
   PhpIcon,
   ReactIcon,
   Showcase,
@@ -75,7 +76,7 @@ export const projects = [
     title: "Fitness Pro | Workoutes & Diets Free Plans",
     thumbnail: Fitnesspro,
     url: `https://github.com/AyadZakaria/FitnessPro`,
-    dribbbleLink:`https://dribbble.com/shots/18839250-Fitness-Coaching-Supplements-Store`,
+    dribbbleLink: `https://dribbble.com/shots/18839250-Fitness-Coaching-Supplements-Store`,
     desc: "Fitness Pro is an online platform designed to support individuals in achieving their fitness and wellness goals. This project likely offers a variety of features, including workout routines, diet plans, and related resources, all available for free. Users can access workout regimens tailored to their fitness levels and dietary guidance to help them maintain a balanced and healthy lifestyle.",
     technologies: [
       {
@@ -105,7 +106,7 @@ export const projects = [
     title: "Ista Great Step | School Mangement System",
     thumbnail: Igs,
     url: `https://github.com/AyadZakaria/igs`,
-    dribbbleLink:`https://dribbble.com/shots/18839425-School-Clubs-Blog-meetings-schedule`,
+    dribbbleLink: `https://dribbble.com/shots/18839425-School-Clubs-Blog-meetings-schedule`,
     desc: "Ista Great Step is a comprehensive software solution designed to streamline school administration and enhance the overall educational experience. This project offers features such as student information management, attendance tracking, and some communication tools",
     technologies: [
       {
@@ -135,7 +136,7 @@ export const projects = [
     title: "TaskMaster | Modern User-friendly To-Do List",
     thumbnail: Taskmaster,
     url: `https://github.com/AyadZakaria/LaravelTodoList`,
-    dribbbleLink:`https://dribbble.com/shots/20565399-TaskMaster-Simple-TodoList-App-Nice-And-Clean-Designe`,
+    dribbbleLink: `https://dribbble.com/shots/20565399-TaskMaster-Simple-TodoList-App-Nice-And-Clean-Designe`,
     desc: "TaskMaster is a contemporary and user-focused task management application or tool. This project is likely designed to help individuals organize their tasks and responsibilities efficiently. With a user-friendly interface and modern design, TaskMaster aims to provide a seamless experience for users to create, prioritize, and manage their to-do lists.",
 
     technologies: [
@@ -171,7 +172,7 @@ export const projects = [
     title: "Gofa Lik | Fully Digital Grocery Store",
     thumbnail: Gofalik,
     url: `https://github.com/AyadZakaria/GofaLik`,
-    dribbbleLink:`https://dribbble.com/shots/18839266-Gofa-Lik-Digital-Grocery-Store`,
+    dribbbleLink: `https://dribbble.com/shots/18839266-Gofa-Lik-Digital-Grocery-Store`,
 
     desc: "Gofa Lik | Fully Digital Grocery Store represents an innovative and entirely digitalized approach to the grocery shopping experience. ",
     technologies: [
@@ -196,8 +197,8 @@ export const projects = [
     id: 5,
     title: "e-foot | Modern Landing Page For Mobile Apps",
     thumbnail: Showcase,
-    url: `https://github.com/AyadZakaria`,
-    dribbbleLink:`https://dribbble.com/shots/21394165-Apps-Show-Case`,
+    url: `https://github.com/AyadZakaria/Apps-Show-Case`,
+    dribbbleLink: `https://dribbble.com/shots/21394165-Apps-Show-Case`,
     desc: "e-Foot is a contemporary and responsive landing page design tailored specifically for mobile applications. This project likely offers a sleek and user-friendly interface to effectively showcase mobile apps, highlighting their features and benefits. It is designed to capture user attention, provide essential information, and encourage app downloads or conversions.",
     technologies: [
       {
@@ -217,8 +218,43 @@ export const projects = [
       },
       {
         id: 4,
-        title: "React js",
+        title: "React",
         icon: ReactIcon,
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "M'tripi | Hiking Blog",
+    thumbnail: Mtripi,
+    url: `https://github.com/AyadZakaria/mtripi`,
+    dribbbleLink: `https://dribbble.com/shots/22517979-M-tripi`,
+    desc: "Mtripi is a Modern and responsive Blog design To Share people's experiences, This project likely offers a sleek and user-friendly interfaces, highlighting the best places for hiking in morocco.",
+    technologies: [
+      {
+        id: 1,
+        title: "HTML",
+        icon: HtmlIcon,
+      },
+      {
+        id: 2,
+        title: "Css",
+        icon: CssIcon,
+      },
+      {
+        id: 3,
+        title: "JavaScript",
+        icon: JsIcon,
+      },
+      {
+        id: 4,
+        title: "React ",
+        icon: ReactIcon,
+      },
+      {
+        id: 5,
+        title: "Laravel",
+        icon: Laravelcon,
       },
     ],
   },

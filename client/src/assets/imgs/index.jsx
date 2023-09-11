@@ -14,6 +14,7 @@ import JsIcon from "./JsIcon.png";
 import CssIcon from "./CssIcon.png";
 import HtmlIcon from "./HtmlIcon.png";
 import socialsIcon from "./socialsIcon.png";
+import Mtripi from "./Mtripi.png";
 
 export {
   MainPic,
@@ -32,4 +33,5 @@ export {
   CssIcon,
   HtmlIcon,
   socialsIcon,
+  Mtripi,
 };
