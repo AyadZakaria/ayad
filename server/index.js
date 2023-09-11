@@ -11,8 +11,9 @@ const port = process.env.PORT || 3001;
 // Middleware
 app.use(cors(
   {
-    origin: ['https://ayadzakaria.vercel.app/','https://ayadzakaria-git-main-ayadzakaria.vercel.app/'],
-    methods: ['GET','POST','PUT']
+    origin: ["*"],
+    methods: ['GET','POST','PUT'],
+    credentials: true
   }
 ));
 app.use(bodyParser.urlencoded({ extended: true }));
