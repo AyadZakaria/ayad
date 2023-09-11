@@ -12,8 +12,8 @@ const port = process.env.PORT || 3001;
 // Middleware
 app.use(
   cors({
-    origin: ["*"],
-    methods: ["GET", "POST", "PUT"],
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
 );
@@ -59,4 +59,4 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-module.exports = cors(handler); 
+module.exports = cors(handler);
