@@ -25,7 +25,7 @@ const Contact = () => {
     setIsSubmiting(true);
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/sendEmail", {
+      const response = await fetch("https://ayad-api.vercel.app/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
