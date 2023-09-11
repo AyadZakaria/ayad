@@ -29,7 +29,8 @@ const Contact = () => {
         method: "POST",
         headers: {
           "Access-Control-Allow-Origin":"*",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+          "Content-Type":"application/json",
+          "Access-Control-Allow-Headers": "Content-Type",
         },
         body: JSON.stringify(formData),
       });
