@@ -28,7 +28,8 @@ const Contact = () => {
       const response = await fetch("https://ayad-api.vercel.app/sendEmail", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(formData),
       });
