@@ -10,7 +10,7 @@ const port = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-  origin:["https://ayad-api.vercel.app/"],
+  origin:["https://ayad-api.vercel.app"],
   methods:["POST", "GET"],
   credentials:true
 }));
