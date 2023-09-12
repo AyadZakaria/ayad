@@ -9,11 +9,11 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/"
+      "src": "/sendEmail",
+      "dest": "./index.js"
     },
     {
-      "src": "/sendEmail",
+      "src": "/(.*)",
       "dest": "/"
     }
   ]
