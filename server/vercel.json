@@ -9,12 +9,8 @@
   ],
   "routes": [
     {
-      "src": "/sendEmail",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
+        "src": "/(.*)",
+        "dest": "/"
     }
-  ]
+   ]
 }

@@ -9,13 +9,31 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(
-  cors({
-    origin: "*",
-    methods: ["POST", "GET", "PUT", "OPTIONS"],
-    credentials: true,
-  })
-);
+
+
+// Define a whitelist of allowed origins
+const whitelist = ["*"];
+
+// CORS middleware to handle the headers
+app.use((req, res, next) => {
+  const origin = req.get("referer");
+  const isWhitelisted = whitelist.find((w) => origin && origin.includes(w));
+  if (isWhitelisted) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+    );
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "X-Requested-With, Content-Type, Authorization"
+    );
+    res.setHeader("Access-Control-Allow-Credentials", true);
+  }
+  // Pass to the next layer of middleware
+  if (req.method === "OPTIONS") res.sendStatus(200);
+  else next();
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
