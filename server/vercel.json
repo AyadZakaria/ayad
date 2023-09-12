@@ -9,15 +9,12 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/"
+    },
+    {
       "src": "/sendEmail",
-      "dest": "/",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"
-      }
+      "dest": "/"
     }
   ]
 }
