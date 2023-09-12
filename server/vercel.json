@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/sendEmail",
-      "dest": "./index.js"
+      "dest": "/index.js"
     },
     {
       "src": "/(.*)",
