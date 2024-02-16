@@ -23,6 +23,10 @@ const Profiles = () => {
   };
   return (
     <div className="main_profiles">
+      <div className="socials_text">
+        <h5>Profiles</h5>
+        <h4>Stay With Me</h4>
+      </div>
       <div className="socials">
         {socials_links.map((elem, key) => {
           return (
@@ -50,10 +54,6 @@ const Profiles = () => {
             </div>
           );
         })}
-      </div>
-      <div className="socials_text">
-          <h4>Stay With Me</h4>
-          <h5>Profiles</h5>
       </div>
     </div>
   );

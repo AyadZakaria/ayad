@@ -28,7 +28,7 @@ h6 {
 .main_btn {
   align-items: center;
   background-color: $main-color;
-  border-radius: 1em;
+  border-radius: $main-border-radius;
   border: none;
   color: $main-white;
   cursor: pointer;
@@ -57,7 +57,7 @@ h6 {
   font-weight: 600;
   cursor: pointer;
   height: 3em;
-  border-radius: 1em;
+  border-radius: $main-border-radius;
   transition: $transition_duration;
   a {
     text-decoration: none;
@@ -96,7 +96,7 @@ h6 {
     width: 150em;
     img {
       width: 90%;
-      border-radius: 1em;
+      border-radius: $main-border-radius;
       padding-bottom: 0;
       margin-bottom: 0;
     }
@@ -169,7 +169,7 @@ h6 {
       .tech {
         font-size: small;
         border: $first-border;
-        border-radius: 1em;
+        border-radius: $main-border-radius;
         padding: 0.5em;
         display: flex;
         align-items: center;

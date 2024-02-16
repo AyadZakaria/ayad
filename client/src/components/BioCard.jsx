@@ -8,14 +8,14 @@ const BioCard = () => {
   const navigate = useNavigate();
   return (
     <div className="main_bio">
-      <img
+      {/* <img
         src={MainPic}
         alt="Me"
         className="me"
         onClick={() => {
           navigate("/about");
         }}
-      />
+      /> */}
       <div className="info">
         <h4>Hi There,</h4>
         <h4>I'm Ayad Zakaria</h4>

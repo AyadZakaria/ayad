@@ -2,7 +2,7 @@
 
 .mainContactContainer {
   border: $first-border;
-  border-radius: 1em;
+  border-radius: $main-border-radius;
   text-align: center;
   background: transparent;
   position: relative;

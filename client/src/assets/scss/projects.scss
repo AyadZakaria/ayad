@@ -1,16 +1,18 @@
 @import "./_variables";
 
 .main_projects_container {
+  height: 100%;
   border: $first-border;
-  border-radius: 1em;
+  border-radius: $main-border-radius;
   position: relative;
   background: transparent;
   text-align: center;
+  margin: 0;
 
   .project_preview {
-    width: 75%;
-    height: 15em;
-    border-radius: 1em;
+    width: 80%;
+    height: 70%;
+    border-radius: $main-border-radius;
     cursor: pointer;
   }
   .project_hover {
@@ -23,13 +25,13 @@
     cursor: pointer;
     h2 {
       background: transparent;
-      border-radius: 1em;
+      border-radius: $main-border-radius;
       padding: 0.5em;
-      border-radius: 1em;
-      
+      border-radius: $main-border-radius;
+
       &:hover {
         background: #d5d5d5;
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }

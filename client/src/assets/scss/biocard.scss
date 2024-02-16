@@ -4,17 +4,17 @@
   // background: $bg-gradient;
   align-items: center;
   display: flex;
-  border-radius: 1em;
+  border-radius: $main-border-radius;
   position: relative;
   border: $first-border;
 
-  .me {
-    border-radius: 1em;
-    width: 30%;
-    cursor: pointer;
-  }
+  // .me {
+  //   border-radius: $main-border-radius;
+  //   width: 30%;
+  //   cursor: pointer;
+  // }
   .info {
-    width: 60%;
+    width: 90%;
     background-color: transparent;
 
     .DownloadCvBtn {
@@ -44,7 +44,7 @@
       margin: 0;
       font-size: large;
       cursor: pointer;
-      padding-left: .5em;
+      padding-left: 0.5em;
     }
     span {
       background-color: transparent;
@@ -64,7 +64,7 @@
       h1 {
         font-size: small;
         width: 90%;
-        padding-left: .5em;
+        padding-left: 0.5em;
       }
     }
   }
