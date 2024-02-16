@@ -270,3 +270,19 @@ h6 {
     top: 1%;
   }
 }
+
+@media screen and (max-width: 570px) {
+  .ProjectsPopOut {
+    width: 90%;
+    margin: 0 auto;
+    font-size: xx-small;
+  }
+  .ProjectsPopOut .closeX {
+    top: 1%;
+  }
+  .technologiesContainer {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

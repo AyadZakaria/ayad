@@ -101,6 +101,7 @@
           margin-left: 2em;
         }
         .cardFooter {
+          margin: 0;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -110,8 +111,9 @@
             // color: $main-color;
           }
           p {
+            font-size: x-small;
             color: $main-color;
-            opacity: 1;
+            opacity: .8;
           }
         }
       }

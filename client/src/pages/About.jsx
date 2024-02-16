@@ -41,6 +41,7 @@ const About = () => {
             expertise in creating web and desktop applications, including
             database and backend systems.
             <br />
+            <br />
             My skillset also includes brand identity, graphics, and illustration
             design. I am a dedicated professional and would be happy to assist
             with any inquiries. Please do not hesitate to contact me for further
